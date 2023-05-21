@@ -30,7 +30,7 @@ date: 2023-05-21
 其实Lambda本质上就是**匿名函数**，在不同的语言中细节上会略有不同，在Kotlin中，Lambda表达式形如`parameter -> expression`。有了Lambda，我们就可以将函数用作函数的参数传递、返回值等。Lambda表达式给我们带来的比较直观的感受就是代码变得==简洁==了。
 
 而高阶函数则是可以**接收函数作为参数**或者**将函数作为返回值**的函数。比如下图所示，higher函数中接收函数类型为参数以及返回值为函数类型（Kotlin示例），这个higher函数就是**高阶函数**
-![高阶函数](../../public/images/2023-05-21/1.png)
+![高阶函数](/public/images/2023-05-21/1.png)
 
 ## 与Java中Lambda的不同
 
@@ -191,7 +191,7 @@ arr.forEach { println(it) }
 
 我们看一下`forEach`这个扩展函数的源码
 
-![扩展函数](../../public/images/2023-05-21/2.jpg)
+![扩展函数](/public/images/2023-05-21/2.jpg)
 
 首先，`forEach`函数的参数只有一个参数，因此我们可以用`it`来代替那个参数，将 `arr.forEach { element -> println(element) }` 简写为 `arr.forEach { println(it) }` 的形式。然后`forEach`函数最后一个参数是函数类型，因此我们可以写在`()`外面，将 `arr.forEach({ println(it) })` 简写为 `arr.forEach { println(it) }`，当然这里只有一个参数，`()`可以省略了，我们可以自定义一个函数试试
 
