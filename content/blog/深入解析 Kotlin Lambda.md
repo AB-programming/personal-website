@@ -191,7 +191,7 @@ arr.forEach { println(it) }
 
 我们看一下`forEach`这个扩展函数的源码
 
-![扩展函数](../../public/images/2023-05-21/2.png)
+![扩展函数](../../public/images/2023-05-21/2.jpg)
 
 首先，`forEach`函数的参数只有一个参数，因此我们可以用`it`来代替那个参数，将 `arr.forEach { element -> println(element) }` 简写为 `arr.forEach { println(it) }` 的形式。然后`forEach`函数最后一个参数是函数类型，因此我们可以写在`()`外面，将 `arr.forEach({ println(it) })` 简写为 `arr.forEach { println(it) }`，当然这里只有一个参数，`()`可以省略了，我们可以自定义一个函数试试
 
