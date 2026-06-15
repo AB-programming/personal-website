@@ -21,7 +21,7 @@ irm https://aspire.dev/install.ps1 | iex
 ```bash
 aspire --version
 ```
-详细可参照官方文档：![Aspire官方文档](https://aspire.dev/get-started/install-cli/)
+详细可参照官方文档：[Aspire官方文档](https://aspire.dev/get-started/install-cli/)
 
 ## 初始化项目
 ```bash
@@ -155,7 +155,7 @@ builder.Build().Run();
 当前是一个Aspire项目，相关skill在.agent/skills下，当前项目下管理了一个前端和后端项目，分别是apiservice和webfrontend，还管理了一个Postgres和Redis，根据这些内容帮我写一个简单的Todo应用，要求用上数据库和缓存。
 
 
-示例代码：![Aspire示例代码仓库](https://github.com/AB-programming/aspireapp-example)
+示例代码：[Aspire示例代码仓库](https://github.com/AB-programming/aspireapp-example)
 
 # 相关概念
 ## AppHost
@@ -168,7 +168,7 @@ AppHost会自动启动所有服务，管理启动的顺序，进行服务发现�
 
 可观测性接入就是指Aspire提供了一个Dashboard来进行分布式追踪、日志、服务拓扑图等，无需进行额外配置，AppHost自动接入Dashboard。
 
-如果想让别的语言服务也接入Aspire的话，可以使用Language & runtime，详见![languages-and-runtimes](https://aspire.dev/languages-and-runtimes/)
+如果想让别的语言服务也接入Aspire的话，可以使用Language & runtime，详见[languages-and-runtimes](https://aspire.dev/languages-and-runtimes/)
 
 ## Resources
 Aspire中，资源包括
@@ -207,4 +207,4 @@ Aspire内部有一个工作的逻辑网络层，其中有四个元素，Endpoint
 图片来源：https://aspire.dev/fundamentals/networking-overview/
 
 ## 参考
-![Aspire documentation home](https://aspire.dev/docs/)
+[Aspire documentation home](https://aspire.dev/docs/)
